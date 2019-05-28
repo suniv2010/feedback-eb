@@ -52,12 +52,15 @@ module.exports.datastores = {
     // adapter: 'sails-mysql',
     // url: 'mysql://user:password@host:port/database',
 	
-	 adapter: 'sails-mongo',
-    host: 'localhost',
-    port: 27017,
+   adapter: 'sails-mongo',
+   
+   url: 'mongodb://sunitha:nivedan1@ds221115.mlab.com:21115/feedbackdb',
+  // ssl: false
+    //host: 'cluster0-argiv.mongodb.net',
+    //port: 27017,
     //user: 'username', //optional
     //password: 'password', //optional
-    database: 'feedbackdb' //optional
+   // database: 'feedbackdb' //optional
 
   },
 

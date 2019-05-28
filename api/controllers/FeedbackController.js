@@ -11,8 +11,10 @@ module.exports = {
             if(err){
                   res.send(500,{error:'database error'});
             }
-            console.log(questions);
-            res.view('questions/list', { questions: questions });
+            //console.log(questions);
+            return res.json(questions)
+           // res.send("success", );
+            //res.view('questions/list', { questions: questions });
            // res.view('articles/list', articles);
             //res.view('/articles/list',{articles:articles});
         })
