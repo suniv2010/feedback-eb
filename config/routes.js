@@ -20,12 +20,7 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': { view: 'pages/homepage' },
-  'get /feedback/list':   {
-    view: 'questions/list',
-    controller: 'FeedbackController',
-    action: 'list'
-   
-},
+  'GET /feedback/list': 'feedback/list',
 'get /feedback/add':   {
   view: 'questions/add',
   controller: 'FeedbackController',
