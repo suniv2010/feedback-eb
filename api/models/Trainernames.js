@@ -8,7 +8,7 @@
 module.exports = {
 
   attributes: {
-    training: {type:'string'}
+    trainers: {type:'string'}
 },
   datastores:'mongodb'
 };

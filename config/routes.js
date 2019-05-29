@@ -26,12 +26,42 @@ module.exports.routes = {
     action: 'list'
    
 },
-'post /feedback/add':   {
+'post /trainingdetails/add':   {
  // view: 'questions/add',
   controller: 'TrainingdetailsController',
   action: 'add'
  
 },
+'get /trainingdetails/list/:id':   {
+  // view: 'questions/add',
+   controller: 'TrainingdetailsController',
+   action: 'list'
+  
+ },
+ 'post /trainingnames/add':   {
+  // view: 'questions/add',
+   controller: 'TrainingnamesController',
+   action: 'add'
+  
+ },
+ 'get /trainingnames/list':   {
+   // view: 'questions/add',
+    controller: 'TrainingnamesController',
+    action: 'list'
+   
+  },
+  'post /Trainernames/add':   {
+   // view: 'questions/add',
+    controller: 'TrainernamesController',
+    action: 'add'
+   
+  },
+  'get /Trainernames/list':   {
+    // view: 'questions/add',
+     controller: 'TrainernamesController',
+     action: 'list'
+    
+   },
 'post /feedback/create':   {
  // view: 'articles/add',
   controller: 'FeedbackController',

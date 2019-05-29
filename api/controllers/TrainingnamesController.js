@@ -1,16 +1,14 @@
 /**
- * TrainingdetailsController
+ * TrainingnamesController
  *
  * @description :: Server-side actions for handling incoming requests.
  * @help        :: See https://sailsjs.com/docs/concepts/actions
  */
 
 module.exports = {
-  
     add: function(req, res){
         var training = req.body.training;
-        var trainers = req.body.trainers;
-        Trainingdetails.create({training:training, trainers:trainers}).exec(function(err){
+        Trainingnames.create({training:training}).exec(function(err){
             if(err){
                 res.send(500, {error: 'Database Error'});
             }
@@ -18,14 +16,13 @@ module.exports = {
            res.send("success");
         });
       },
-
       list:async function(req, res){
-        Trainingdetails.findOne({_id: req.params.id}).exec(function(err,trainingdetails){
+        Trainingnames.find({}).exec(function(err,trainingnames){
               if(err){
                     res.send(500,{error:'database error'});
               }
               //console.log(questions);
-              return res.json(trainingdetails)
+              return res.json(trainingnames)
              // res.send("success", );
               //res.view('questions/list', { questions: questions });
              // res.view('articles/list', articles);
@@ -33,6 +30,6 @@ module.exports = {
           })
             
       }
-    
+
 };
 
