@@ -26,9 +26,9 @@ module.exports.routes = {
     action: 'list'
    
 },
-'get /feedback/add':   {
-  view: 'questions/add',
-  controller: 'FeedbackController',
+'post /feedback/add':   {
+ // view: 'questions/add',
+  controller: 'TrainingdetailsController',
   action: 'add'
  
 },
