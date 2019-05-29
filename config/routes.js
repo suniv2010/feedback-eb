@@ -20,6 +20,7 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': { view: 'pages/homepage' },
+
   'get /feedback/list':   {
     view: 'questions/list',
     controller: 'FeedbackController',
@@ -27,9 +28,9 @@ module.exports.routes = {
    
 },
 'post /trainingdetails/add':   {
- // view: 'questions/add',
-  controller: 'TrainingdetailsController',
-  action: 'add'
+  // view: 'questions/add',
+   controller: 'TrainingdetailsController',  
+action: 'add'
  
 },
 'get /trainingdetails/list':   {
