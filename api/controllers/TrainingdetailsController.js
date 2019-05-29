@@ -20,6 +20,21 @@ module.exports = {
       },
 
       list:async function(req, res){
+        Trainingdetails.find({}).exec(function(err,trainingdetails){
+              if(err){
+                    res.send(500,{error:'database error'});
+              }
+              //console.log(questions);
+              return res.json(trainingdetails)
+             // res.send("success", );
+              //res.view('questions/list', { questions: questions });
+             // res.view('articles/list', articles);
+              //res.view('/articles/list',{articles:articles});
+          })
+            
+      },
+
+      details:async function(req, res){
         Trainingdetails.findOne({_id: req.params.id}).exec(function(err,trainingdetails){
               if(err){
                     res.send(500,{error:'database error'});

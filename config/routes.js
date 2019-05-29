@@ -32,10 +32,16 @@ module.exports.routes = {
   action: 'add'
  
 },
-'get /trainingdetails/list/:id':   {
+'get /trainingdetails/list':   {
   // view: 'questions/add',
    controller: 'TrainingdetailsController',
    action: 'list'
+  
+ },
+'get /trainingdetails/details/:id':   {
+  // view: 'questions/add',
+   controller: 'TrainingdetailsController',
+   action: 'details'
   
  },
  'post /trainingnames/add':   {
