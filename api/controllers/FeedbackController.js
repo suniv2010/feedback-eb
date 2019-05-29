@@ -35,7 +35,7 @@ module.exports = {
               res.send(500, {error: 'Database Error'});
           }
   
-         res.send("success");
+         res.send({message : "success"});
       });
   },
   
