@@ -10,7 +10,10 @@ module.exports = {
     add: function(req, res){
         var training = req.body.training;
         var trainers = req.body.trainers;
-        Trainingdetails.create({training:training, trainers:trainers}).exec(function(err){
+        var location = req.body.location;
+        var training_date = req.body.training_date;
+
+        Trainingdetails.create({training:training, trainers:trainers,location:location,training_date:training_date}).exec(function(err){
             if(err){
                 res.send(500, {error: 'Database Error'});
             }
