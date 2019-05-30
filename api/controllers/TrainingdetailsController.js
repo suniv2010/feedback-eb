@@ -36,7 +36,6 @@ module.exports = {
           })
             
       },
-
       details:async function(req, res){
         Trainingdetails.findOne({_id: req.params.id}).exec(function(err,trainingdetails){
               if(err){
