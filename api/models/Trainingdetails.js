@@ -11,7 +11,8 @@ module.exports = {
     training: {type:'string'},
     trainers: {type:'string'},
     location: {type:'string'},
-    training_date: {type:'string'}
+    from_date: {type:'string'},
+    to_date: {type:'string'}
 },
   datastores:'mongodb'
 };
