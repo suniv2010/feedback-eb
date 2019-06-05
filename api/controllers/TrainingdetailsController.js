@@ -80,7 +80,18 @@ module.exports = {
            res.send("success");
         });
         return false;
-    }
+    },
+    delete: function(req, res){
+        Trainingdetails.destroy({id:req.params.id}).exec(function(err){
+            if(err){
+                res.send(500, {error: 'Database Error'});
+            }
+    
+            res.send("success");
+        });
+    
+        return false;
+    },
     
 };
 
