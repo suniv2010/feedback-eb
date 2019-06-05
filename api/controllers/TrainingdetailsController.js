@@ -50,7 +50,37 @@ module.exports = {
               //res.view('/articles/list',{articles:articles});
           })
             
-      }
+      },
+      edit: function(req, res){
+        Trainingdetails.findOne({_id: req.params.id}).exec(function(err,feedback){
+            if(err){
+                  //res.send(500,{error:'database error'});
+            }
+            console.log(feedback);
+            return res.json(feedback)
+           // res.send("success", );
+            //res.view('questions/list', { questions: questions });
+           // res.view('articles/list', articles);
+            //res.view('/articles/list',{articles:articles});
+        })
+    },
+    update: function(req, res){
+        var training = req.body.training;
+        var trainers = req.body.trainers;
+        var location = req.body.location;
+        var from_date = req.body.from_date;
+        var to_date = req.body.to_date;
+
+        console.log(req.params.id);
+        Trainingdetails.update({id: req.params.id},{training:training, trainers:trainers,location:location,from_date:from_date,to_date:to_date}).exec(function(err){
+            if(err){
+                res.send(500, {error: 'Database Error'});
+            }
+    
+           res.send("success");
+        });
+        return false;
+    }
     
 };
 

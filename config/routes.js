@@ -76,6 +76,24 @@ action: 'add'
  
 },
 
+'get /trainingdetails/edit/:id':   {
+ // view: 'articles/edit/:id',
+  controller: 'TrainingdetailsController',
+  action: 'edit'
+ 
+},
+'post /trainingdetails/update/:id':   {
+ //view: 'articles/edit',
+ controller: 'TrainingdetailsController',
+ action: 'update'
+
+},
+'post /trainingdetails/delete/:id':   {
+ //view: 'articles/edit',
+ controller: 'TrainingdetailsController',
+ action: 'delete'
+
+},
 
   /***************************************************************************
   *                                                                          *
