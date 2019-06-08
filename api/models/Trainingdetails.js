@@ -9,7 +9,7 @@ module.exports = {
 
   attributes: {
     training: {type:'string'},
-    trainers: {type:'string'},
+    trainers: {type:'json'},
     location: {type:'string'},
     from_date: {type:'string'},
     to_date: {type:'string'}

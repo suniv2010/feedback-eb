@@ -10,6 +10,7 @@ module.exports = {
     add: function(req, res){
         var training = req.body.training;
         var trainers = req.body.trainers;
+        console.log(trainers);
         var location = req.body.location;
         var from_date = req.body.from_date;
         var to_date = req.body.to_date;
