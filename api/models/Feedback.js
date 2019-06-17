@@ -8,6 +8,7 @@
 module.exports = {
 
   attributes: {
+    name: {type:'string'},
     training: {type:'string'},
     trainers: {type:'string'},
     location:{type:'string'},
