@@ -14,7 +14,7 @@
     "sails-hook-orm": "^2.1.1",
     "sails-hook-sockets": "^1.5.5",
     "sails-mongo": "^1.0.1",
-    "xlsx": "^0.14.3"
+    "xlsx": "^0.17.0"
   },
   "devDependencies": {
     "@sailshq/eslint": "^4.19.3"
